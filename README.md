@@ -14,7 +14,8 @@
 ## Generate a library
 
 ```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+# Replace <your-org> and <your-lib> with your organization and library names
+npx nx g @nx/js:lib packages/<your-lib> --publishable --importPath=@<your-org>/<your-lib>
 ```
 
 ## Run tasks
@@ -22,7 +23,7 @@ npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
 To build the library use:
 
 ```sh
-npx nx build pkg1
+npx nx build <project-name> # Replace <project-name> with your actual library/project name
 ```
 
 To run any task with Nx use:
